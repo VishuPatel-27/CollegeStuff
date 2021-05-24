@@ -1,0 +1,10 @@
+ <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        style="@style/modifiedEditText"
+        android:id="@+id/textViewCaste"
+        android:padding="16dp"
+        android:text="text"
+        android:inputType="none"
+        android:textSize="16sp" />
+
+

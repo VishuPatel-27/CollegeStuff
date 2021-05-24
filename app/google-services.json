@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "521183481839",
+    "project_id": "clg-stuff",
+    "storage_bucket": "clg-stuff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:521183481839:android:4051cfe6aae8dbe37e301a",
+        "android_client_info": {
+          "package_name": "com.vishupatel.clgstuff"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "521183481839-51orp9v7j1h519pg1bjftv0o86als6sj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT1cRPbVATKW_zGTdOQRIvsSQmBhi7QG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "521183481839-51orp9v7j1h519pg1bjftv0o86als6sj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
