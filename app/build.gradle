@@ -9,8 +9,8 @@ android {
 
     defaultConfig {
         applicationId "com.vishupatel.clgstuff"
-        minSdkVersion 21
-        targetSdkVersion 29
+        minSdkVersion 21 // android 5.0 lollipop overview
+        targetSdkVersion 29     // android 10
         versionCode 1
         versionName "1.0"
 
@@ -43,6 +43,8 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    implementation 'com.google.firebase:firebase-messaging:22.0.0'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
@@ -52,9 +54,17 @@ dependencies {
     implementation "com.google.android.material:material:1.0.0"
 
     // for bottom navigation bar
-    implementation "com.etebarian:meow-bottom-navigation-java:1.2.0"
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.2.0'
 
     //circle image view dependencies
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //for set user profile image
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.4+'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // for reading pdf file into our application
+   /* implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'*/
+
 
 }

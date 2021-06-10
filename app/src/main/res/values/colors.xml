@@ -5,7 +5,10 @@
     <color name="colorAccent">#11CFC5</color>
     <color name="themeColor">#11CFC5</color>
     <color name="titleColor">#00ADC1</color>
-    <color name="titleColorOfReg">#66CDAA</color>
+    <color name="secondaryVariant">#018786</color>
+    <color name="lightWhite">#f1f1f1</color>
+    <color name="mainColor">#141932</color>
+    <color name="whiteBack">#EEEEEE</color>
 
     <color name="darkTextColor">#020000</color>
     <color name="contentTextColor">#020000</color>

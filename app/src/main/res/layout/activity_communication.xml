@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    tools:context=".CommunicationActivity"
+    android:layout_alignParentTop="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:background="@drawable/profile_background">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="Communication"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/rectangle_frame_container"
+        android:focusableInTouchMode="true"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_marginTop="70dp"
+                android:text="With the help of this application every student can get an each and every information about scholarships."
+                android:textColor="@color/black"
+                android:textSize="3mm" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:text="For getting information just click on related scholarships button and you would be getting  all information about scholarship."
+                android:textColor="@color/black"
+                android:textSize="3mm" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:text="Further you would be getting  all instructions related to your scholarship in pdf format. So you can read it and understand it accordingly."
+                android:textColor="@color/black"
+                android:textSize="3mm" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:text="You are also getting list of related documents in this application related to your scholarship . And also you can download college related documents from college documents section."
+                android:textColor="@color/black"
+                android:textSize="3mm" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/background_btn"
+                    android:onClick="onClickShareBtn">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#00000000"
+                        android:src="@drawable/ic_share_app"
+                        android:onClick="onClickShareBtn"
+                         />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/background_btn"
+                    android:onClick="onClickSupportBtn">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#00000000"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_communicationicon"
+                        android:onClick="onClickSupportBtn"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chipBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chip_navigation_background"
+        android:elevation="16dp"
+        android:padding="8dp"
+        app:cnb_menuResource="@menu/chip_nav_item"
+        android:fitsSystemWindows="true"
+        />
+
+</RelativeLayout>

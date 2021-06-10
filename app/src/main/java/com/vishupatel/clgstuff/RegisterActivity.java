@@ -1,19 +1,15 @@
 package com.vishupatel.clgstuff;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Patterns;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -23,6 +19,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,6 +34,9 @@ public class RegisterActivity extends AppCompatActivity{
     private TextInputEditText name,email,mobileNo,enrollmentNo,currentSem,Password;
     private CircularProgressButton regButton;
     private AutoCompleteTextView textCaste;
+    private FirebaseStorage firebaseStorage;
+    private StorageReference storageReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -60,6 +61,7 @@ public class RegisterActivity extends AppCompatActivity{
         currentSem = findViewById(R.id.editTextSem);
         Password = findViewById(R.id.editTextPassword);
         regButton = findViewById(R.id.cirRegisterButton);
+
     }
 
     // when user hit back button on UI
@@ -79,6 +81,7 @@ public class RegisterActivity extends AppCompatActivity{
         String enteredSem = currentSem.getText().toString().trim();
         String enteredCaste = textCaste.getText().toString().trim();
         String enteredPass = Password.getText().toString().trim();
+
 
         // validate name input field
         if(enteredName.isEmpty()){
@@ -177,6 +180,7 @@ public class RegisterActivity extends AppCompatActivity{
                             user.put("userCurrentSem",enteredSem);
                             user.put("userCaste",enteredCaste);
                             user.put("userPassword",enteredPass);
+
 
                             documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                                 @Override

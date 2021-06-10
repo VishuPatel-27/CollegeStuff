@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContainerActivity"
+    android:background="#EEEEEE"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="-10dp"
+                android:src="@drawable/ic_back_btn"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:onClick="onClickBack"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instructions"
+            android:textSize="25sp"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="Students who have not been able to apply conditionally in the first year of admission to the course and are meeting the eligibility criteria in the following year will have to apply on the “DELAYED APPLICATION” link to avail the benefits of the scheme for the rest of the course."
+                android:textColor="@color/black"
+                android:textSize="2.5mm" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="Only students who get admission in higher courses in the year 2018 or later are eligible to get the renewal assistance for the academic year 2020-21, they have to apply online on this link."
+                android:textColor="@color/black"
+                android:textSize="2.5mm" />
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/background_btn"
+            android:onClick="onClickInstruction">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:background="#00000000"
+                android:onClick="onClickInstruction"
+                android:text=">>"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="Important instruction for applicant"
+                android:textColor="@color/whiteTextColor"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="The basic qualification of the resolution to apply for renewal assistance will be considered."
+                android:textColor="@color/black"
+                android:textSize="2.5mm" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="This link is for DELAYED APPLICATION only for the application for renewal assistance for the academic year 2020-21 only. So that students will not be eligible for previous assistance."
+                android:textColor="@color/black"
+                android:textSize="2.5mm" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="Students admitted in the year 2015 for 5th renewal assistance, students admitted in the year 2015 for 4th renewal assistance, students admitted in the year 2015 for 3rd renewal assistance, students admitted in the year 2015 for 2nd renewal assistance and students admitted in the year 2016 for 1st re."
+                android:textColor="@color/black"
+                android:textSize="2.5mm" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="#344955"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="The list of Documents for Renewal Application along with the marksheet and admission letter of Std-12 (Degree / Provisional Certificate in D to D case) should be attached with the application for renewal."
+                android:textColor="@color/whiteTextColor"
+                android:textSize="2.5mm" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                android:text="Students who have availed benefits under this scheme once before will have to apply in RENEWAL LINK."
+                android:textColor="@color/black"
+                android:textSize="2.5mm" />
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
     android:layout_gravity="center"
-    android:background="@color/login_bk_color"
+    android:background="@color/whiteBack"
     android:focusableInTouchMode="true"
     android:gravity="center">
 
@@ -79,7 +79,7 @@
                 android:layout_marginTop="10dp"
                 android:onClick="setNewPassword"
                 android:text="Forgot Password?"
-                android:textColor="@color/primaryTextColor"
+                android:textColor="@color/black"
                 android:textSize="@dimen/newsMoreTextSize" />
             <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
                 android:id="@+id/cirLoginButton"
@@ -100,7 +100,7 @@
                 android:onClick="onRedirectRegistration"
                 android:text="New User? Register Now"
                 android:textAlignment="center"
-                android:textColor="@color/themeColor"
+                android:textColor="@color/black"
                 android:textSize="17sp"
                 android:textStyle="bold"/>
 

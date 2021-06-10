@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusableInTouchMode="true"
+    tools:context=".ScholarshipActivity"
+    android:layout_alignParentTop="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/profile_background">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/title_of_scholarship"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rectangle_frame_container">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background_btn"
+                android:onClick="startMysyActivity">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:text="@string/expand_all"
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="startMysyActivity"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/mysy"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:onClick="startMysyActivity"/>
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/mysy_logo"
+                    android:onClick="startMysyActivity"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background_btn"
+                android:onClick="startDigitalActivity">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:text="@string/expand_all"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="startDigitalActivity"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="20dp"
+                    android:text="@string/digital"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:onClick="startDigitalActivity"/>
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="-20dp"
+                    android:background="#00000000"
+                    android:src="@drawable/digital_gujarat"
+                    android:onClick="startDigitalActivity"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/background_btn"
+                android:onClick="startCollegeDocumentsActivity"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="#00000000"
+                    android:padding="20dp"
+                    android:text="@string/expand_all"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/colorPrimary"
+                    android:onClick="startCollegeDocumentsActivity"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="20dp"
+                    android:text="College's Documents"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:onClick="startCollegeDocumentsActivity"
+                    />
+
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="-5dp"
+                    android:onClick="startCollegeDocumentsActivity"
+                    android:src="@drawable/student_icon_clg"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/chipBottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/chip_navigation_background"
+        android:elevation="16dp"
+        android:padding="8dp"
+        android:fitsSystemWindows="true"
+        app:cnb_menuResource="@menu/chip_nav_item"
+        />
+
+</RelativeLayout>

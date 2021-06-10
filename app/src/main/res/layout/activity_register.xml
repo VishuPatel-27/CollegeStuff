@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/register_bk_color"
+    android:background="@color/mainColor"
     android:focusableInTouchMode="true"
     android:gravity="center"
     tools:context=".RegisterActivity">
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardBackgroundColor="#EEEEEE"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
@@ -143,7 +143,7 @@
                         <AutoCompleteTextView
                             android:id="@+id/editTextCaste"
                             style="@style/modifiedEditText"
-                            android:text="Choose Your Caste"
+                            android:text="Choose Your Category"
                             android:inputType="none"
                             android:textSize="12sp"
                             android:maxLines="1" />
@@ -181,7 +181,7 @@
                         android:onClick="onRedirectLogin"
                         android:text="Already have an account?"
                         android:textAlignment="center"
-                        android:textColor="@color/themeColor"
+                        android:textColor="@color/black"
                         android:textSize="17sp"
                         android:textStyle="bold" />
 
@@ -243,13 +243,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <View
-        android:layout_width="11dp"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/ic_side_bg" />
+
 
     <ImageView
         android:layout_width="wrap_content"

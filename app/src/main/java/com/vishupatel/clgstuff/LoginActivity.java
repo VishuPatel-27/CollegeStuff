@@ -35,7 +35,7 @@ public class LoginActivity extends AppCompatActivity {
 
         if(mAuth.getCurrentUser() != null){
             finish();
-            startActivity(new Intent(LoginActivity.this, MainContentActivity.class));
+            startActivity(new Intent(LoginActivity.this, ScholarshipActivity.class));
         }
     }
 
@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(LoginActivity.this, "Logged In Successfully!", Toast.LENGTH_LONG).show();
                 loginButton.stopAnimation();
                 loginButton.revertAnimation();
-                startActivity(new Intent(LoginActivity.this, MainContentActivity.class));
+                startActivity(new Intent(LoginActivity.this, ScholarshipActivity.class));
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
